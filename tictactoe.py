@@ -37,5 +37,7 @@ def fullboard():
     else:
         return False
 if __name__ == '__main__':
-    
+    choice = input('Would you like to be Xs or Os?')
+    if choice == 'x' or 'X':
+        
 printboard()
