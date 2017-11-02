@@ -13,8 +13,12 @@ square8 = 8
 square9 = 9
 
 def printboard():
-    for i in range(1):
-        print('__ '*3)
-    for i in range(1):
-        print('|  '*3)
+    print(' ---','---','---')
+    print('| 1','| 2','| 3','|')
+    print(' ---','---','---')
+    print('| 4','| 5','| 6','|')
+    print(' ---','---','---')
+    print('| 7','| 8','| 9','|')
+    print(' ---','---','---')
+    
 printboard()
