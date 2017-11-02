@@ -36,5 +36,6 @@ def fullboard():
         return True
     else:
         return False
-
+if __name__ == '__main__':
+    
 printboard()
