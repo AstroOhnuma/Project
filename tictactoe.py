@@ -36,4 +36,5 @@ def fullboard():
         return True
     else:
         return False
+
 printboard()
