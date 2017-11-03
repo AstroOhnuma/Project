@@ -35,7 +35,7 @@ def winner():
     else:
         return False
 def fullboard():
-    if sqaure1 == 'X' or square1 == 'O' and sqaure2 == 'X' or square2 == 'O' and sqaure3 == 'X' or square3 == 'O' and sqaure4 == 'X' or square4 == 'O' and sqaure5 == 'X' or square5 == 'O' and sqaure6 == 'X' or square6 == 'O' and sqaure7 == 'X' or square7 == 'O' and sqaure8 == 'X' or square8 == 'O' and sqaure9 == 'X' or square9 == 'O':
+    if sqaure1 == x or square1 == o and sqaure2 == x or square2 == o and sqaure3 == x or square3 == o and sqaure4 == x or square4 == o and sqaure5 == x or square5 == o and sqaure6 == x or square6 == o and sqaure7 == x or square7 == o and sqaure8 == x or square8 == o and sqaure9 == x or square9 == o:
         return True
     else:
         return False
@@ -83,6 +83,5 @@ if __name__ == '__main__':
         elif turn == 9:
             square9 = 'X'
             printboard()
-        
-        
+        fullboard()
     
