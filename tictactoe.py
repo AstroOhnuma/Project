@@ -59,29 +59,37 @@ if __name__ == '__main__':
         if turn == 1:
             square1 = 'X'
             printboard()
+            isempty(1)
         elif turn == 2:
             square2 = 'X'
             printboard()
+            isempty(2)
         elif turn == 3:
             square3 = 'X'
             printboard()
+            isempty(3)
         elif turn == 4:
             square4 = 'X'
             printboard()
+            isempty(4)
         elif turn == 5:
             square5 = 'X'
             printboard()
+            isempty(5)
         elif turn == 6:
             square6 = 'X'
             printboard()
+            isempty(6)
         elif turn == 7:
             square7 = 'X'
             printboard()
+            isempty(7)
         elif turn == 8:
             square8 = 'X'
             printboard()
+            isempty(8)
         elif turn == 9:
             square9 = 'X'
             printboard()
-        fullboard()
+            isempty(9)
     
