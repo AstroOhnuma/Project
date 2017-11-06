@@ -96,7 +96,7 @@ if __name__ == '__main__':
         com = x'''
     printboard()
     while win < 1:
-        while isempty() == False:
+        while isempty == False:
             turn = int(input('Where would you like to go?: '))
     if turn == 1:
         isempty(turn)
