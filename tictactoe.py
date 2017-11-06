@@ -55,6 +55,21 @@ def isempty(num1):
             return False
         else:
             return True
+    if num1 == 7:
+        if square7 == 'X' or square7 == 'O':
+            return False
+        else:
+            return True
+    if num1 == 8:
+        if square8 == 'X' or square8 == 'O':
+            return False
+        else:
+            return True
+    if num1 == 9:
+        if square9 == 'X' or square9 == 'O':
+            return False
+        else:
+            return True
 def winner():
     if win == 1:
         return True
