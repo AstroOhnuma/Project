@@ -25,10 +25,36 @@ def printboard():
     print('|',square7,'|',square8,'|',square9,'|')
     print(' ---','---','---')
 def isempty(num1):
-    if num1 == x or num1 == o:
-        return True
-    else:
-        return False
+    if num1 == 1:
+        if square1 == 'X' or square1 == 'O':
+            return False
+        else:
+            return True
+    if num1 == 2:
+        if square2 == 'X' or square2 == 'O':
+            return False
+        else:
+            return True
+    if num1 == 3:
+        if square3 == 'X' or square3 == 'O':
+            return False
+        else:
+            return True
+    if num1 == 4:
+        if square4 == 'X' or square4 == 'O':
+            return False
+        else:
+            return True
+    if num1 == 5:
+        if square5 == 'X' or square5 == 'O':
+            return False
+        else:
+            return True
+    if num1 == 6:
+        if square6 == 'X' or square6 == 'O':
+            return False
+        else:
+            return True
 def winner():
     if win == 1:
         return True
@@ -55,41 +81,42 @@ if __name__ == '__main__':
         com = x'''
     printboard()
     while win < 1:
-        turn = int(input('Where would you like to go?: '))
-        if turn == 1:
-            square1 = 'X'
-            printboard()
-            isempty(1)
-        elif turn == 2:
-            square2 = 'X'
-            printboard()
-            isempty(2)
-        elif turn == 3:
-            square3 = 'X'
-            printboard()
-            isempty(3)
-        elif turn == 4:
-            square4 = 'X'
-            printboard()
-            isempty(4)
-        elif turn == 5:
-            square5 = 'X'
-            printboard()
-            isempty(5)
-        elif turn == 6:
-            square6 = 'X'
-            printboard()
-            isempty(6)
-        elif turn == 7:
-            square7 = 'X'
-            printboard()
-            isempty(7)
-        elif turn == 8:
-            square8 = 'X'
-            printboard()
-            isempty(8)
-        elif turn == 9:
-            square9 = 'X'
-            printboard()
-            isempty(9)
+        while isempty == False:
+            turn = int(input('Where would you like to go?: '))
+            if turn == 1:
+                isempty(turn)
+                square1 = 'X'
+                printboard()
+            elif turn == 2:
+                isempty(turn)
+                square2 = 'X'
+                printboard()
+            elif turn == 3:
+                isempty(turn)
+                square3 = 'X'
+                printboard()
+            elif turn == 4:
+                isempty(turn)
+                square4 = 'X'
+                printboard()
+            elif turn == 5:
+                isempty(turn)
+                square5 = 'X'
+                printboard()
+            elif turn == 6:
+                isempty(turn)
+                square6 = 'X'
+                printboard()
+            elif turn == 7:
+                isempty(turn)
+                square7 = 'X'
+                printboard()
+            elif turn == 8:
+                isempty(turn)
+                square8 = 'X'
+                printboard()
+            elif turn == 9:
+                isempty(turn)
+                square9 = 'X'
+                printboard()
     
