@@ -98,40 +98,40 @@ if __name__ == '__main__':
     while win < 1:
         while isempty == False:
             turn = int(input('Where would you like to go?: '))
-            if turn == 1:
-                isempty(turn)
-                square1 = 'X'
-                printboard()
-            elif turn == 2:
-                isempty(turn)
-                square2 = 'X'
-                printboard()
-            elif turn == 3:
-                isempty(turn)
-                square3 = 'X'
-                printboard()
-            elif turn == 4:
-                isempty(turn)
-                square4 = 'X'
-                printboard()
-            elif turn == 5:
-                isempty(turn)
-                square5 = 'X'
-                printboard()
-            elif turn == 6:
-                isempty(turn)
-                square6 = 'X'
-                printboard()
-            elif turn == 7:
-                isempty(turn)
-                square7 = 'X'
-                printboard()
-            elif turn == 8:
-                isempty(turn)
-                square8 = 'X'
-                printboard()
-            elif turn == 9:
-                isempty(turn)
-                square9 = 'X'
-                printboard()
+    if turn == 1:
+        isempty(turn)
+        square1 = 'X'
+        printboard()
+    elif turn == 2:
+        isempty(turn)
+        square2 = 'X'
+        printboard()
+    elif turn == 3:
+        isempty(turn)
+        square3 = 'X'
+        printboard()
+    elif turn == 4:
+        isempty(turn)
+        square4 = 'X'
+        printboard()
+    elif turn == 5:
+        isempty(turn)
+        square5 = 'X'
+        printboard()
+    elif turn == 6:
+        isempty(turn)
+        square6 = 'X'
+        printboard()
+    elif turn == 7:
+        isempty(turn)
+        square7 = 'X'
+        printboard()
+    elif turn == 8:
+        isempty(turn)
+        square8 = 'X'
+        printboard()
+    elif turn == 9:
+        isempty(turn)
+        square9 = 'X'
+        printboard()
     
