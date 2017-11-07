@@ -26,11 +26,9 @@ def printboard():
     print(' ---','---','---')
 def isempty(num1):
     if num1 == 1:
-        print(square1)
         if square1 == 'X' or square1 == 'O':
             return False
         else:
-            print('Astro')
             return True
     if num1 == 2:
         if square2 == 'X' or square2 == 'O':
