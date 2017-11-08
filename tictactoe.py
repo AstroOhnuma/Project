@@ -90,38 +90,74 @@ if __name__ == '__main__':
             isempty(turn)
             square1 = 'X'
             printboard()
+            fullboard()
+            if fullboard() == True:
+                print('Full board! Nobody wins!')
+                break
         elif turn == 2:
             isempty(turn)
             square2 = 'X'
             printboard()
+            fullboard()
+            if fullboard() == True:
+                print('Full board! Nobody wins!')
+                break
         elif turn == 3:
             isempty(turn)
             square3 = 'X'
             printboard()
+            fullboard()
+            if fullboard() == True:
+                print('Full board! Nobody wins!')
+                break
         elif turn == 4:
             isempty(turn)
             square4 = 'X'
             printboard()
+            fullboard()
+            if fullboard() == True:
+                print('Full board! Nobody wins!')
+                break
         elif turn == 5:
             isempty(turn)
             square5 = 'X'
             printboard()
+            fullboard()
+            if fullboard() == True:
+                print('Full board! Nobody wins!')
+                break
         elif turn == 6:
             isempty(turn)
             square6 = 'X'
             printboard()
+            fullboard()
+            if fullboard() == True:
+                print('Full board! Nobody wins!')
+                break
         elif turn == 7:
             isempty(turn)
             square7 = 'X'
             printboard()
+            fullboard()
+            if fullboard() == True:
+                print('Full board! Nobody wins!')
+                break
         elif turn == 8:
             isempty(turn)
             square8 = 'X'
             printboard()
+            fullboard()
+            if fullboard() == True:
+                print('Full board! Nobody wins!')
+                break
         elif turn == 9:
             isempty(turn)
             square9 = 'X'
             printboard()
+            fullboard()
+            if fullboard() == True:
+                print('Full board! Nobody wins!')
+                break
         com = randint(1,9)
         while isempty(com) == False:
             com = randint(1,9)
@@ -129,36 +165,73 @@ if __name__ == '__main__':
             isempty(com)
             square1 = 'O'
             printboard()
+            fullboard()
+            if fullboard() == True:
+                print('Full board! Nobody wins!')
+                break
         elif com == 2:
             isempty(com)
             square2 = 'O'
             printboard()
+            fullboard()
+            if fullboard() == True:
+                print('Full board! Nobody wins!')
+                break
         elif com == 3:
             isempty(com)
             square3 = 'O'
             printboard()
+            fullboard()
+            if fullboard() == True:
+                print('Full board! Nobody wins!')
+                break
         elif com == 4:
             isempty(com)
             square4 = 'O'
             printboard()
+            fullboard()
+            if fullboard() == True:
+                print('Full board! Nobody wins!')
+                break
         elif com == 5:
             isempty(com)
             square5 = 'O'
             printboard()
+            fullboard()
+            if fullboard() == True:
+                print('Full board! Nobody wins!')
+                break
         elif com == 6:
             isempty(com)
             square6 = 'O'
             printboard()
+            fullboard()
+            if fullboard() == True:
+                print('Full board! Nobody wins!')
+                break
         elif com == 7:
             isempty(com)
             square7 = 'O'
             printboard()
+            fullboard()
+            if fullboard() == True:
+                print('Full board! Nobody wins!')
+                break
         elif com == 8:
             isempty(com)
             square8 = 'O'
             printboard()
+            fullboard()
+            if fullboard() == True:
+                print('Full board! Nobody wins!')
+                break
         elif com == 9:
             isempty(com)
             square9 = 'O'
             printboard()
+            fullboard()
+            if fullboard() == True:
+                print('Full board! Nobody wins!')
+                break
+        
     
