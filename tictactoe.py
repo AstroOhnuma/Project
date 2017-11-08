@@ -81,19 +81,6 @@ def fullboard():
     else:
         return False
 if __name__ == '__main__':
-    '''
-    first = randint(1,2)
-    if first == 1:
-        print('Player goes first!')
-    else:
-        print('Computer goes first!')
-    choice = input('Would you like to be Xs or Os?')
-    if choice == 'x' or choice == 'X':
-        player = x
-        com = o
-    elif choice == 'o' or choice == 'O':
-        player = o
-        com = x'''
     printboard()
     while win < 1:
         turn = int(input('Where would you like to go?: '))
