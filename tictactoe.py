@@ -122,4 +122,43 @@ if __name__ == '__main__':
             isempty(turn)
             square9 = 'X'
             printboard()
+        com = randint(1,9)
+        while isempty(com) == False:
+            com = randint(1,9)
+        if com == 1:
+            isempty(com)
+            square1 = 'O'
+            printboard()
+        elif com == 2:
+            isempty(com)
+            square2 = 'O'
+            printboard()
+        elif com == 3:
+            isempty(com)
+            square3 = 'O'
+            printboard()
+        elif com == 4:
+            isempty(com)
+            square4 = 'O'
+            printboard()
+        elif com == 5:
+            isempty(com)
+            square5 = 'O'
+            printboard()
+        elif com == 6:
+            isempty(com)
+            square6 = 'O'
+            printboard()
+        elif com == 7:
+            isempty(com)
+            square7 = 'O'
+            printboard()
+        elif com == 8:
+            isempty(com)
+            square8 = 'O'
+            printboard()
+        elif com == 9:
+            isempty(com)
+            square9 = 'O'
+            printboard()
     
