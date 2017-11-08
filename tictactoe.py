@@ -76,7 +76,7 @@ def winner():
     else:
         return False
 def fullboard():
-    if sqaure1 == x or square1 == o and sqaure2 == x or square2 == o and sqaure3 == x or square3 == o and sqaure4 == x or square4 == o and sqaure5 == x or square5 == o and sqaure6 == x or square6 == o and sqaure7 == x or square7 == o and sqaure8 == x or square8 == o and sqaure9 == x or square9 == o:
+    if square1 == 'X' or square1 == 'O' and square2 == 'X' or square2 == 'O' and square3 == 'X' or square3 == 'O' and square4 == 'X' or square4 == 'O' and square5 == 'X' or square5 == 'O' and square6 == 'X' or square6 == 'O' and square7 == 'X' or square7 == 'O' and square8 == 'X' or square8 == 'O' and square9 == 'X' or square9 == 'O':
         return True
     else:
         return False
