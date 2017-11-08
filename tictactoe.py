@@ -30,42 +30,42 @@ def isempty(num1):
             return False
         else:
             return True
-    if num1 == 2:
+    elif num1 == 2:
         if square2 == 'X' or square2 == 'O':
             return False
         else:
             return True
-    if num1 == 3:
+    elif num1 == 3:
         if square3 == 'X' or square3 == 'O':
             return False
         else:
             return True
-    if num1 == 4:
+    elif num1 == 4:
         if square4 == 'X' or square4 == 'O':
             return False
         else:
             return True
-    if num1 == 5:
+    elif num1 == 5:
         if square5 == 'X' or square5 == 'O':
             return False
         else:
             return True
-    if num1 == 6:
+    elif num1 == 6:
         if square6 == 'X' or square6 == 'O':
             return False
         else:
             return True
-    if num1 == 7:
+    elif num1 == 7:
         if square7 == 'X' or square7 == 'O':
             return False
         else:
             return True
-    if num1 == 8:
+    elif num1 == 8:
         if square8 == 'X' or square8 == 'O':
             return False
         else:
             return True
-    if num1 == 9:
+    elif num1 == 9:
         if square9 == 'X' or square9 == 'O':
             return False
         else:
