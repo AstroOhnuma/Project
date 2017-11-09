@@ -71,7 +71,35 @@ def isempty(num1):
         else:
             return True
 def winner():
-    if win == 1:
+    if isempty(1) == False and isempty(2) == False and isempty(3) == False:
+        return True
+    else:
+        return False
+    if isempty(4) == False and isempty(5) == False and isempty(6) == False:
+        return True
+    else:
+        return False
+    if isempty(7) == False and isempty(8) == False and isempty(9) == False:
+        return True
+    else:
+        return False
+    if isempty(1) == False and isempty(5) == False and isempty(9) == False:
+        return True
+    else:
+        return False
+    if isempty(3) == False and isempty(5) == False and isempty(7) == False:
+        return True
+    else:
+        return False
+    if isempty(1) == False and isempty(4) == False and isempty(7) == False:
+        return True
+    else:
+        return False
+    if isempty(2) == False and isempty(5) == False and isempty(8) == False:
+        return True
+    else:
+        return False
+    if isempty(3) == False and isempty(6) == False and isempty(9) == False:
         return True
     else:
         return False
@@ -90,6 +118,10 @@ if __name__ == '__main__':
             isempty(turn)
             square1 = 'X'
             printboard()
+            winner()
+            if winner() == True:
+                print('Player Wins! Nice Job!')
+                break
             fullboard()
             if fullboard() == True:
                 print('Full board! Nobody wins!')
@@ -98,6 +130,10 @@ if __name__ == '__main__':
             isempty(turn)
             square2 = 'X'
             printboard()
+            winner()
+            if winner() == True:
+                print('Player Wins! Nice Job!')
+                break
             fullboard()
             if fullboard() == True:
                 print('Full board! Nobody wins!')
@@ -106,6 +142,10 @@ if __name__ == '__main__':
             isempty(turn)
             square3 = 'X'
             printboard()
+            winner()
+            if winner() == True:
+                print('Player Wins! Nice Job!')
+                break
             fullboard()
             if fullboard() == True:
                 print('Full board! Nobody wins!')
@@ -114,6 +154,10 @@ if __name__ == '__main__':
             isempty(turn)
             square4 = 'X'
             printboard()
+            winner()
+            if winner() == True:
+                print('Player Wins! Nice Job!')
+                break
             fullboard()
             if fullboard() == True:
                 print('Full board! Nobody wins!')
@@ -122,6 +166,10 @@ if __name__ == '__main__':
             isempty(turn)
             square5 = 'X'
             printboard()
+            winner()
+            if winner() == True:
+                print('Player Wins! Nice Job!')
+                break
             fullboard()
             if fullboard() == True:
                 print('Full board! Nobody wins!')
@@ -130,6 +178,10 @@ if __name__ == '__main__':
             isempty(turn)
             square6 = 'X'
             printboard()
+            winner()
+            if winner() == True:
+                print('Player Wins! Nice Job!')
+                break
             fullboard()
             if fullboard() == True:
                 print('Full board! Nobody wins!')
@@ -138,6 +190,10 @@ if __name__ == '__main__':
             isempty(turn)
             square7 = 'X'
             printboard()
+            winner()
+            if winner() == True:
+                print('Player Wins! Nice Job!')
+                break
             fullboard()
             if fullboard() == True:
                 print('Full board! Nobody wins!')
@@ -146,6 +202,10 @@ if __name__ == '__main__':
             isempty(turn)
             square8 = 'X'
             printboard()
+            winner()
+            if winner() == True:
+                print('Player Wins! Nice Job!')
+                break
             fullboard()
             if fullboard() == True:
                 print('Full board! Nobody wins!')
@@ -154,6 +214,10 @@ if __name__ == '__main__':
             isempty(turn)
             square9 = 'X'
             printboard()
+            winner()
+            if winner() == True:
+                print('Player Wins! Nice Job!')
+                break
             fullboard()
             if fullboard() == True:
                 print('Full board! Nobody wins!')
@@ -165,6 +229,10 @@ if __name__ == '__main__':
             isempty(com)
             square1 = 'O'
             printboard()
+            winner()
+            if winner() == True:
+                print('Com Wins! Too Bad..')
+                break
             fullboard()
             if fullboard() == True:
                 print('Full board! Nobody wins!')
@@ -173,6 +241,10 @@ if __name__ == '__main__':
             isempty(com)
             square2 = 'O'
             printboard()
+            winner()
+            if winner() == True:
+                print('Com Wins! Too Bad..')
+                break
             fullboard()
             if fullboard() == True:
                 print('Full board! Nobody wins!')
@@ -181,6 +253,10 @@ if __name__ == '__main__':
             isempty(com)
             square3 = 'O'
             printboard()
+            winner()
+            if winner() == True:
+                print('Com Wins! Too Bad..')
+                break
             fullboard()
             if fullboard() == True:
                 print('Full board! Nobody wins!')
@@ -189,6 +265,10 @@ if __name__ == '__main__':
             isempty(com)
             square4 = 'O'
             printboard()
+            winner()
+            if winner() == True:
+                print('Com Wins! Too Bad..')
+                break
             fullboard()
             if fullboard() == True:
                 print('Full board! Nobody wins!')
@@ -197,6 +277,10 @@ if __name__ == '__main__':
             isempty(com)
             square5 = 'O'
             printboard()
+            winner()
+            if winner() == True:
+                print('Com Wins! Too Bad..')
+                break
             fullboard()
             if fullboard() == True:
                 print('Full board! Nobody wins!')
@@ -205,6 +289,10 @@ if __name__ == '__main__':
             isempty(com)
             square6 = 'O'
             printboard()
+            winner()
+            if winner() == True:
+                print('Com Wins! Too Bad..')
+                break
             fullboard()
             if fullboard() == True:
                 print('Full board! Nobody wins!')
@@ -213,6 +301,10 @@ if __name__ == '__main__':
             isempty(com)
             square7 = 'O'
             printboard()
+            winner()
+            if winner() == True:
+                print('Com Wins! Too Bad..')
+                break
             fullboard()
             if fullboard() == True:
                 print('Full board! Nobody wins!')
@@ -221,6 +313,10 @@ if __name__ == '__main__':
             isempty(com)
             square8 = 'O'
             printboard()
+            winner()
+            if winner() == True:
+                print('Com Wins! Too Bad..')
+                break
             fullboard()
             if fullboard() == True:
                 print('Full board! Nobody wins!')
@@ -229,6 +325,10 @@ if __name__ == '__main__':
             isempty(com)
             square9 = 'O'
             printboard()
+            winner()
+            if winner() == True:
+                print('Com Wins! Too Bad..')
+                break
             fullboard()
             if fullboard() == True:
                 print('Full board! Nobody wins!')
