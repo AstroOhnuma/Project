@@ -2,7 +2,7 @@
 #11/1/17
 #tictactoe.py - first project, tictactoe without graphics
 from random import randint
-square1 = 1
+square1 = 1#setting the variables for the different spaces in the board
 square2 = 2
 square3 = 3
 square4 = 4
@@ -11,7 +11,7 @@ square6 = 6
 square7 = 7
 square8 = 8
 square9 = 9
-def printboard():
+def printboard():#actually creates the board and sets the spaces in the board to be the square variables
     print(' ---','---','---')
     print('|',square1,'|',square2,'|',square3,'|')
     print(' ---','---','---')
@@ -19,7 +19,7 @@ def printboard():
     print(' ---','---','---')
     print('|',square7,'|',square8,'|',square9,'|')
     print(' ---','---','---')
-def isempty(num1):
+def isempty(num1):#checks if a specific space in the board has an X or an O
     if num1 == 1:
         if square1 == 'X' or square1 == 'O':
             return False
@@ -65,7 +65,7 @@ def isempty(num1):
             return False
         else:
             return True
-def winner():
+def winner():#checks if someone won the game
     if square1 == square2 and square3 == square2:
         return True
     elif square4 == square5 and square6 == square5:
@@ -84,18 +84,18 @@ def winner():
         return True
     else:
         return False
-def fullboard():
+def fullboard():#checks if the board is full and noone won
     if isempty(1) == False and isempty(2) == False and isempty(3) == False and isempty(4) == False and isempty(5) == False and isempty(6) == False and isempty(7) == False and isempty(8) == False and isempty(9) == False:
         return True
     else:
         return False
-if __name__ == '__main__':
-    printboard()
-    while winner() == False:
-        turn = int(input('Where would you like to go?: '))
-        while isempty(turn) == False:
+if __name__ == '__main__':#makes the program work
+    printboard()#calling the function to print the board
+    while winner() == False:#checking if someone won the game, if not, starts the first turn or begins another turn
+        turn = int(input('Where would you like to go?: '))#asks where the player would like to put their X
+        while isempty(turn) == False:#checks if the space the player chose is empty, if it is, asks the player for another space
             turn = int(input('Where would you like to go?: '))
-        if turn == 1:
+        if turn == 1:#checks if the player chose to place an X on space 1, checks if it is empty, sets the space to an X, reprints the board, checks if the move made the player win, checks if the move made the board full
             isempty(turn)
             square1 = 'X'
             printboard()
@@ -203,8 +203,8 @@ if __name__ == '__main__':
             if fullboard() == True:
                 print('Full board! Nobody wins!')
                 break
-        com = randint(1,9)
-        while isempty(com) == False:
+        com = randint(1,9)#chooses a random space for the computer to place an O
+        while isempty(com) == False:#checks if the space is full and if it is, chooses a new random space
             com = randint(1,9)
         if com == 1:
             isempty(com)
