@@ -91,7 +91,7 @@ def fullboard():
         return False
 if __name__ == '__main__':
     printboard()
-    while win < 1:
+    while winner() == False:
         turn = int(input('Where would you like to go?: '))
         while isempty(turn) == False:
             turn = int(input('Where would you like to go?: '))
