@@ -2,9 +2,6 @@
 #11/1/17
 #tictactoe.py - first project, tictactoe without graphics
 from random import randint
-win = 0
-player = 'none'
-com = 'also none'
 square1 = 1
 square2 = 2
 square3 = 3
@@ -14,8 +11,6 @@ square6 = 6
 square7 = 7
 square8 = 8
 square9 = 9
-x = 'X'
-o = 'O'
 def printboard():
     print(' ---','---','---')
     print('|',square1,'|',square2,'|',square3,'|')
