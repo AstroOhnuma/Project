@@ -71,35 +71,21 @@ def isempty(num1):
         else:
             return True
 def winner():
-    if isempty(1) == False and isempty(2) == False and isempty(3) == False:
+    if square1 == square2 and square3 == square2:
         return True
-    else:
-        return False
-    if isempty(4) == False and isempty(5) == False and isempty(6) == False:
+    elif square4 == square5 and square6 == square5:
         return True
-    else:
-        return False
-    if isempty(7) == False and isempty(8) == False and isempty(9) == False:
+    elif square7 == square8 and square9 == square8:
         return True
-    else:
-        return False
-    if isempty(1) == False and isempty(5) == False and isempty(9) == False:
+    elif square1 == square5 and square9 == square5:
         return True
-    else:
-        return False
-    if isempty(3) == False and isempty(5) == False and isempty(7) == False:
+    elif square3 == square5 and square7 == square5:
         return True
-    else:
-        return False
-    if isempty(1) == False and isempty(4) == False and isempty(7) == False:
+    elif square1 == square4 and square7 == square4:
         return True
-    else:
-        return False
-    if isempty(2) == False and isempty(5) == False and isempty(8) == False:
+    elif square2 == square5 and square8 == square5:
         return True
-    else:
-        return False
-    if isempty(3) == False and isempty(6) == False and isempty(9) == False:
+    elif square3 == square6 and square9 == square6:
         return True
     else:
         return False
