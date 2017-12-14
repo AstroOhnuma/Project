@@ -10,4 +10,4 @@ def buildboard():
         for col in range(0,10):
             print(board[row][col],' ',end = '')
         print()
-buildboard
+buildboard()
