@@ -7,7 +7,7 @@ board = [[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,
 
 def buildboard():
     for row in range(0,10):
-        for col in range(0,100:
+        for col in range(0,10):
             print(board[row][col],' ',end = '')
         print()
 buildboard
