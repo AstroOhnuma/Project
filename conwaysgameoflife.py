@@ -13,12 +13,14 @@ def buildboard():
 def redrawall():
     for item in App().spritelist[:]:
         item.destroy()
-white = Color(0xFFFFFF,1)
-black = Color(0x000000,1)
-blackoutline = LineStyle(1,black)
-deadcell = RectangleAsset(20,20,blackoutline,white)
-livingcell = RectangleAsset(20,20,blackoutline,black)
-
-Sprite(deadcell, (60,60))
-Sprite(livingcell, (80,80))
+    white = Color(0xFFFFFF,1)
+    black = Color(0x000000,1)
+    blackoutline = LineStyle(1,black)
+    whiteoutline = LineStyle(1,white)
+    deadcell = RectangleAsset(20,20,blackoutline,white)
+    livingcell = RectangleAsset(20,20,whiteoutline,black)
+    for row in range(0,10):
+        for col in range(0,10):
+            Sprite(deadcell)
+redrawall()
 App().run()
