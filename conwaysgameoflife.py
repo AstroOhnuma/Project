@@ -22,5 +22,6 @@ def redrawall():
     for row in range(0,10):
         for col in range(0,10):
             Sprite(deadcell, (row*30,col*30))
-redrawall()
+def numneighbors(row*num1,col*num2):
+    if row*num1+1 == livingcell
 App().run()
