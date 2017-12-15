@@ -17,10 +17,10 @@ def redrawall():
     black = Color(0x000000,1)
     blackoutline = LineStyle(1,black)
     whiteoutline = LineStyle(1,white)
-    deadcell = RectangleAsset(20,20,blackoutline,white)
-    livingcell = RectangleAsset(20,20,whiteoutline,black)
+    deadcell = RectangleAsset(30,30,blackoutline,white)
+    livingcell = RectangleAsset(30,30,whiteoutline,black)
     for row in range(0,10):
         for col in range(0,10):
-            Sprite(deadcell)
+            Sprite(deadcell, (row*30,col*30))
 redrawall()
 App().run()
