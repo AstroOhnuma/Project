@@ -22,6 +22,7 @@ def redrawall():
     for row in range(0,10):
         for col in range(0,10):
             Sprite(deadcell, (row*30,col*30))
-def numneighbors(num1,num2):
-    if 
+def numneighbors():
+    board[row-1][col-1] = 'X'
+numneighbors()
 App().run()
