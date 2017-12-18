@@ -9,7 +9,6 @@ def buildboard():
     for row in range(0,10):
         for col in range(0,10):
             print(board[row][col],' ',end = '')
-        print()
 def redrawall():
     for item in App().spritelist[:]:
         item.destroy()
@@ -40,5 +39,9 @@ def numneighbors(num1,num2):
         count += 1
     if board[num1-2][num2-2] == 9:
         count += 1
+def nextgeneration():
+    for row in range(0,10):
+        for col in range(0,10):
+            print(board[row][col],' ',end = '')
     
 App().run()
