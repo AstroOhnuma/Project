@@ -49,5 +49,5 @@ def mouseclick(event):
 if __name__ == '__main__':
     redrawall()
     
-    App().listenMouseClickEvent('click', mouseclick)
+    App().listenMouseEvent('click', mouseclick)
     App().run()
