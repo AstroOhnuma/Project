@@ -43,7 +43,11 @@ def nextgeneration():
     for row in range(0,10):
         for col in range(0,10):
             print(board[row][col],' ',end = '')
+def mouseclick(event):
+    if event.x == board[2] and event.y == board[4]:
+        print('You clicked it!')
 if __name__ == '__main__':
     redrawall()
     
+    App().listenMouseClickEvent('click', mouseclick)
     App().run()
