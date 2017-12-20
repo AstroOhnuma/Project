@@ -43,5 +43,7 @@ def nextgeneration():
     for row in range(0,10):
         for col in range(0,10):
             print(board[row][col],' ',end = '')
+if __name__ == '__main__':
+    redrawall()
     
-App().run()
+    App().run()
