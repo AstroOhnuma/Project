@@ -45,7 +45,7 @@ def nextgeneration():
             print(board[row][col],' ',end = '')
 def mouseclick(event):
     if event.x == board[2] and event.y == board[2]:
-        print('
+        print('You clicked row',event.x,'and column',event.y,)
 if __name__ == '__main__':
     redrawall()
     
