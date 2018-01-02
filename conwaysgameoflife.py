@@ -18,9 +18,13 @@ def redrawall():
     whiteoutline = LineStyle(1,white)
     deadcell = RectangleAsset(30,30,blackoutline,white)
     livingcell = RectangleAsset(30,30,whiteoutline,black)
+    nextgenbox = RectangleAsset(300,60,blackoutline,black)
+    nextgen = TextAsset('Next Generation',fill=white,style='bold 30pt Ariel')
     for row in range(0,10):
         for col in range(0,10):
             Sprite(deadcell, (row*30,col*30))
+    Sprite(nextgenbox, (0,300))
+    Sprite(nextgen, (0,320))
 def numneighbors(num1,num2):
     count = 0
     if board[num1-2][num2-1] == 1:
@@ -45,6 +49,7 @@ def nextgeneration():
             print(board[row][col],' ',end = '')
 def mouseclick(event):
         print('You clicked row',event.y/30,'and column',event.x/30)
+        
 if __name__ == '__main__':
     buildboard()
     redrawall()
