@@ -20,10 +20,9 @@ def redrawall():
     livingcell = RectangleAsset(30,30,whiteoutline,black)
     for row in range(0,10):
         for col in range(0,10):
-            if board[row*30][col*30] == 1:
-                Sprite(livingcell)
-            elif board[row*30][col*30] == 0:
-                Sprite(deadcell)
+            Sprite(deadcell, (row*30,col*30))
+            if board[row][col] == 1:
+                Sprite(deadcell, (row,col))
 def numneighbors(num1,num2):
     count = 0
     if board[num1-2][num2-1] == 1:
