@@ -21,8 +21,11 @@ def redrawall():
     for row in range(0,10):
         for col in range(0,10):
             Sprite(deadcell, (row*30,col*30))
-            if board[][] == 1:
-                Sprite(livingcell, (row,col))
+            for i in board[0:][0:]:
+                if i == 1:
+                    Sprite(livingcell, (row,col))
+                elif i == 0:
+                    Sprite(deadcell, (row,col))
 def numneighbors(num1,num2):
     count = 0
     if board[num1-2][num2-1] == 1:
