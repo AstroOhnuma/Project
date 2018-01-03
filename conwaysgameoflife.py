@@ -17,10 +17,14 @@ def redrawall():
     blackoutline = LineStyle(1,black)
     whiteoutline = LineStyle(1,white)
     deadcell = RectangleAsset(30,30,blackoutline,white)
-    livingcell = RectangleAsset(30,30,whiteoutline,black)
+    livingcell = RectangleAsset(30,30,blackoutline,black)
     nextgenbox = RectangleAsset(150,60,blackoutline,black)
     notnext = TextAsset('Next',fill=white,style='bold 30pt Times')
+    gen = TextAsset('Generation',fill=white,style='bold 30pt Times')
     Sprite(nextgenbox, (0,300))
+    Sprite(nextgenbox, (150,300))
+    Sprite(notnext, (0,310))
+    Sprite(gen, (100,310))
     for row in range(0,10):
         for col in range(0,10):
             Sprite(deadcell, (col*30,row*30))
