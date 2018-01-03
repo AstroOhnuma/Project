@@ -19,7 +19,8 @@ def redrawall():
     deadcell = RectangleAsset(30,30,blackoutline,white)
     livingcell = RectangleAsset(30,30,whiteoutline,black)
     nextgenbox = RectangleAsset(150,60,blackoutline,black)
-    notnext = TextAsset('Next',
+    notnext = TextAsset('Next',fill=white,style='bold 30pt Times')
+    Sprite(nextgenbox, (0,300))
     for row in range(0,10):
         for col in range(0,10):
             Sprite(deadcell, (col*30,row*30))
