@@ -48,7 +48,7 @@ def nextgeneration():
         for col in range(0,10):
             print(board[row][col],' ',end = '')
 def mouseclick(event):
-        print('You clicked row',event.y/30,'and column',event.x/30)
+        print('You clicked row',event.y//30,'and column',event.x//30)
         
 if __name__ == '__main__':
     buildboard()
