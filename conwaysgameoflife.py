@@ -20,12 +20,11 @@ def redrawall():
     livingcell = RectangleAsset(30,30,whiteoutline,black)
     for row in range(0,10):
         for col in range(0,10):
-            Sprite(deadcell, (row*30,col*30))
-            for i in board[0:][0:]:
-                if i == 1:
-                    Sprite(livingcell, (row,col))
-                elif i == 0:
-                    Sprite(deadcell, (row,col))
+            Sprite(deadcell, (col*30,row*30))
+            if board[row][col] == 1:
+                Sprite(livingcell, (col*30,row*30))
+            else:
+                Sprite(deadcell, (col*30,row*30))
 def numneighbors(num1,num2):
     count = 0
     if board[num1-2][num2-1] == 1:
@@ -47,7 +46,17 @@ def numneighbors(num1,num2):
 def nextgeneration():
     for row in range(0,10):
         for col in range(0,10):
-            print(board[row][col],' ',end = '')
+            num = numneighbors(row,col)
+            if num < 2:
+                board[row][col] = 0
+            elif num > 3:
+                board[row][col] = 0
+            elif num = 2:
+                board[row][col] = board[row][col]
+            elif num = 3:
+                board[row][col] = 1
+    board = nextgeneration()
+    redrawall()
 def mouseclick(event):
         board[event.y//30][event.x//30] = 1
         print('You clicked row',int(event.y/30),'and column',int(event.x/30))
