@@ -50,6 +50,7 @@ def numneighbors(num1,num2):
         count += 1
     if board[num1][num2-1] == 1:
         count += 1
+    return count
 def nextgeneration():
     for row in range(0,10):
         for col in range(0,10):
@@ -70,7 +71,6 @@ def mouseclick(event):
         board[event.y//30][event.x//30] = 1
         print('You clicked row',int(event.y/30),'and column',int(event.x/30))
         redrawall()
-        
 if __name__ == '__main__':
     buildboard()
     redrawall()
