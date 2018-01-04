@@ -34,21 +34,21 @@ def redrawall():
                 Sprite(deadcell, (col*30,row*30))
 def numneighbors(num1,num2):
     count = 0
-    if board[num1-2][num2-1] == 1:
-        count += 1
-    if board[num1-1][num2-2] == 1:
-        count += 1
-    if board[num1][num2-1] == 1:
+    if board[num1-1][num2-1] == 1:
         count += 1
     if board[num1-1][num2] == 1:
         count += 1
-    if board[num1][num2-2] == 1:
+    if board[num1-1][num2+1] == 1:
         count += 1
-    if board[num1-2][num2] == 1:
+    if board[num1][num2+1] == 1:
         count += 1
-    if board[num1][num2] == 1:
+    if board[num1+1][num2+1] == 1:
         count += 1
-    if board[num1-2][num2-2] == 1:
+    if board[num1+1][num2] == 1:
+        count += 1
+    if board[num1+1][num2-1] == 1:
+        count += 1
+    if board[num1][num2-1] == 1:
         count += 1
 def nextgeneration():
     for row in range(0,10):
@@ -65,6 +65,8 @@ def nextgeneration():
     board = nextgeneration()
     redrawall()
 def mouseclick(event):
+        if event.y//30 > 9 or event.x//30 > 9:
+            nextgeneration()
         board[event.y//30][event.x//30] = 1
         print('You clicked row',int(event.y/30),'and column',int(event.x/30))
         redrawall()
