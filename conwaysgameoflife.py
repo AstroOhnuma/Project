@@ -60,7 +60,7 @@ def nextgeneration():
             if num < 2:
                 newboard[row][col] = 0
             elif num > 3:
-                newboardrow][col] = 0
+                newboard[row][col] = 0
             elif num == 2:
                 newboard[row][col] = newboard[row][col]
             elif num == 3:
