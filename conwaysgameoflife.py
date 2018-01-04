@@ -18,7 +18,7 @@ def redrawall():
     blackoutline = LineStyle(1,black)
     whiteoutline = LineStyle(1,white)
     deadcell = RectangleAsset(30,30,blackoutline,white)
-    livingcell = RectangleAsset(30,30,blackoutline,black)
+    livingcell = RectangleAsset(30,30,whiteoutline,black)
     nextgenbox = RectangleAsset(150,60,blackoutline,black)
     notnext = TextAsset('Next',fill=white,style='bold 30pt Times')
     gen = TextAsset('Generation',fill=white,style='bold 30pt Times')
@@ -35,21 +35,21 @@ def redrawall():
                 Sprite(deadcell, (col*30,row*30))
 def numneighbors(num1,num2):
     count = 0
-    if board[num1-1][num2-1] == 1:
+    if num1 > 0 and num2 > 0 and board[num1-1][num2-1] == 1:
         count += 1
-    if board[num1-1][num2] == 1:
+    if num1 > 0 and board[num1-1][num2] == 1:
         count += 1
-    if board[num1-1][num2+1] == 1:
+    if num1 > 0 and num2 < 9 and board[num1-1][num2+1] == 1:
         count += 1
-    if board[num1][num2+1] == 1:
+    if num2 < 9 and board[num1][num2+1] == 1:
         count += 1
-    if board[num1+1][num2+1] == 1:
+    if num1 < 9 and num2 < 9 and board[num1+1][num2+1] == 1:
         count += 1
-    if board[num1+1][num2] == 1:
+    if num1 <9 and board[num1+1][num2] == 1:
         count += 1
-    if board[num1+1][num2-1] == 1:
+    if num1 < 9 and num2 > 0 and board[num1+1][num2-1] == 1:
         count += 1
-    if board[num1][num2-1] == 1:
+    if num2 > 0 and board[num1][num2-1] == 1:
         count += 1
     return count
 def nextgeneration():
