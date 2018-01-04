@@ -53,18 +53,19 @@ def numneighbors(num1,num2):
         count += 1
     return count
 def nextgeneration():
+    newboard = [[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0]]
     for row in range(0,10):
         for col in range(0,10):
             num = numneighbors(row,col)
             if num < 2:
-                board[row][col] = 0
+                newboard[row][col] = 0
             elif num > 3:
-                board[row][col] = 0
+                newboardrow][col] = 0
             elif num == 2:
-                board[row][col] = board[row][col]
+                newboard[row][col] = newboard[row][col]
             elif num == 3:
-                board[row][col] = 1
-    board = nextgeneration()
+                newboard[row][col] = 1
+    board = newboard
     redrawall()
 def mouseclick(event):
         if event.y//30 > 9 or event.x//30 > 9:
