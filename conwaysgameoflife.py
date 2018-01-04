@@ -65,8 +65,8 @@ def nextgeneration():
                 newboard[row][col] = newboard[row][col]
             elif num == 3:
                 newboard[row][col] = 1
-    board = newboard
-    redrawall()
+        board = newboard
+        redrawall()
 def mouseclick(event):
         if event.y//30 > 9 or event.x//30 > 9:
             nextgeneration()
