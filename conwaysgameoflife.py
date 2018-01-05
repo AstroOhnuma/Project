@@ -52,13 +52,13 @@ def nextgeneration():
     for row in range(0,10):
         for col in range(0,10):
             num = numneighbors(row,col)
-            if num < 2:
+            if data['board'][row][col]==1 and num < 2:
                 newboard[row][col] = 0
-            elif num > 3:
+            elif data['board'][row][col]==1 and num > 3:
                 newboard[row][col] = 0
-            elif num == 2 or num == 3 and newboard[row][col] == 1:
+            elif data['board'][row][col]==1 and num == 2 or data['board'][row][col]==1 and num == 3:
                 newboard[row][col] = 1
-            elif num == 3:
+            elif data['board'][row][col]==0 and num == 3:
                 newboard[row][col] = 1
     data['board'] = newboard
     redrawall()
