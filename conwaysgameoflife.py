@@ -3,13 +3,8 @@
 #conwaysgameoflife.py - Mathematical model of life and population growth
 from ggame import *
 
-board = [[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0]]
-
 def buildboard():
-    for row in range(0,10):
-        for col in range(0,10):
-            print(board[row][col],' ',end = '')
-        print()
+    return data['board']
 def redrawall():
     for item in App().spritelist[:]:
         item.destroy()
@@ -29,27 +24,27 @@ def redrawall():
     for row in range(0,10):
         for col in range(0,10):
             Sprite(deadcell, (col*30,row*30))
-            if board[row][col] == 1:
+            if data['board'][row][col] == 1:
                 Sprite(livingcell, (col*30,row*30))
             else:
                 Sprite(deadcell, (col*30,row*30))
 def numneighbors(num1,num2):
     count = 0
-    if num1 > 0 and num2 > 0 and board[num1-1][num2-1] == 1:
+    if num1 > 0 and num2 > 0 and data['board'][num1-1][num2-1] == 1:
         count += 1
-    if num1 > 0 and board[num1-1][num2] == 1:
+    if num1 > 0 and data['board'][num1-1][num2] == 1:
         count += 1
-    if num1 > 0 and num2 < 9 and board[num1-1][num2+1] == 1:
+    if num1 > 0 and num2 < 9 and data['board'][num1-1][num2+1] == 1:
         count += 1
-    if num2 < 9 and board[num1][num2+1] == 1:
+    if num2 < 9 and data['board'][num1][num2+1] == 1:
         count += 1
-    if num1 < 9 and num2 < 9 and board[num1+1][num2+1] == 1:
+    if num1 < 9 and num2 < 9 and data['board'][num1+1][num2+1] == 1:
         count += 1
-    if num1 <9 and board[num1+1][num2] == 1:
+    if num1 <9 and data['board'][num1+1][num2] == 1:
         count += 1
-    if num1 < 9 and num2 > 0 and board[num1+1][num2-1] == 1:
+    if num1 < 9 and num2 > 0 and data['board'][num1+1][num2-1] == 1:
         count += 1
-    if num2 > 0 and board[num1][num2-1] == 1:
+    if num2 > 0 and data['board'][num1][num2-1] == 1:
         count += 1
     return count
 def nextgeneration():
@@ -61,19 +56,22 @@ def nextgeneration():
                 newboard[row][col] = 0
             elif num > 3:
                 newboard[row][col] = 0
-            elif num == 2:
-                newboard[row][col] = newboard[row][col]
+            elif num == 2 or num == 3 and newboard[row][col] == 1:
+                newboard[row][col] = 1
             elif num == 3:
                 newboard[row][col] = 1
-    board = newboard
+    data['board'] = newboard
     redrawall()
 def mouseclick(event):
         if event.y//30 > 9 or event.x//30 > 9:
             nextgeneration()
-        board[event.y//30][event.x//30] = 1
-        print('You clicked row',int(event.y/30),'and column',int(event.x/30))
-        redrawall()
+        else:
+            data['board'][event.y//30][event.x//30] = 1
+            print('You clicked row',int(event.y/30),'and column',int(event.x/30))
+            redrawall()
 if __name__ == '__main__':
+    data = {}
+    data['board'] = [[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0]]
     buildboard()
     redrawall()
     
